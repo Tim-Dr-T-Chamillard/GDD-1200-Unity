@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TeddyBear : MonoBehaviour {
 
+    bool printedMessage = false;
+
 	// Use this for initialization
 	void Start () {
         print("Hello world from old ASUS");
@@ -11,6 +13,11 @@ public class TeddyBear : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!printedMessage &&
+            Time.time > 2) {
+            print("2 seconds message from msi");
+            printedMessage = true;
+        }
 		
 	}
 }
