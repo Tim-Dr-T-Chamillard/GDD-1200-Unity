@@ -6,7 +6,7 @@ public class TeddyBear : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        print("Hello world from old ASUS");
 	}
 	
 	// Update is called once per frame
